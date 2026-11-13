@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">شيزو تولز</string>
+    <string name="app_name">ShizuTools</string>
     <string name="this_app_requires_u_shizuku">هذا التطبيق يتطلب <u>Shizuku</u>.\nتأكد أن تطبيق شيزوكو مثبت ويعمل.</string>
     <string name="force_applying_mixedaudio_may_crash">التفعيل الإجباري لـ MixedAudio قد يتسبب في تعطل بعض التطبيقات، وقد يؤدي تفعيله على تطبيقات النظام إلى تعطل النظام بالكامل.</string>
     <string name="debloater">Debloater</string>

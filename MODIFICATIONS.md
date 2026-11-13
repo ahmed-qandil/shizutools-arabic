@@ -11,3 +11,5 @@
 No functional changes to any tool. Original LICENSE (GPLv3) applies; source of this modified version is published in this repository as required.
 
 8. (ar2) SoundMaster control UI: auto-hide-after-timeout now defaults to OFF (was ON, 3s, touch-only timer) so TalkBack users can navigate without the dialog closing under them. The setting remains available.
+
+9. (ar2) Launcher app name stays "ShizuTools" (English) per user request; rule for all future mods: app names stay in English, app content in Arabic.
