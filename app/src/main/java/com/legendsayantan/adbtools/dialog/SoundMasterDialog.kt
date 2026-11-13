@@ -64,7 +64,7 @@ class SoundMasterDialog(context:Context) : Dialog(context) {
                 }
             })
             addView(MaterialSwitch(context).apply {
-                isChecked = prefs.getBoolean("auto_hide", false)
+                isChecked = prefs.getBoolean("auto_hide", true)
                 text = context.getString(R.string.auto_hide_soundmaster)
                 setOnCheckedChangeListener { _, isChecked ->
                     prefs.edit().putBoolean("auto_hide", isChecked).apply()
