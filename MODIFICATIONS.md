@@ -13,3 +13,5 @@ No functional changes to any tool. Original LICENSE (GPLv3) applies; source of t
 8. (ar2, REVERTED in ar3 per user decision) SoundMaster auto-hide default was briefly changed to OFF; ar3 restores upstream behavior. The user turns the switch off himself.
 
 9. (ar2) Launcher app name stays "ShizuTools" (English) per user request; rule for all future mods: app names stay in English, app content in Arabic.
+
+10. (ar3, standing rule for all future mods, per user) Only modify genuine modification targets: removing useless features, Arabic translation, accessibility labels. NEVER change the default of anything that has its own on/off switch in settings - the user toggles those himself. All future versions build on ar3 only.
