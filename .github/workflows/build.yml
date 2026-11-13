@@ -27,18 +27,19 @@ jobs:
       - name: Prepare artifacts
         run: |
           mkdir -p dist
-          cp app/build/outputs/apk/release/app-release-unsigned.apk "dist/ShizuTools-1.4.6-ar1-unsigned.apk"
-          zip -r "dist/ShizuTools-1.4.6-ar1-source.zip" . -x "./.git/*" "./dist/*" "./app/build/*" "./.gradle/*"
+          cp app/build/outputs/apk/release/app-release-unsigned.apk "dist/ShizuTools-1.4.6-ar2-unsigned.apk"
+          zip -r "dist/ShizuTools-1.4.6-ar2-source.zip" . -x "./.git/*" "./dist/*" "./app/build/*" "./.gradle/*"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.4.6-ar1
-          name: ShizuTools Arabic v1.4.6-ar1
+          tag_name: v1.4.6-ar2
+          name: ShizuTools Arabic v1.4.6-ar2
           body: |
             Arabic localized, accessibility-friendly custom build of ShizuTools (upstream v1.4.6, github.com/legendsayantan/ShizuTools, GPLv3).
             - Full Arabic translation (values-ar) including all previously hardcoded strings.
             - TalkBack labels added to icon-only buttons; decorative icons hidden from screen readers.
             - GitHub/developer link button and upstream update checker removed.
             - Unsigned release APK: sign it yourself before installing.
+            - ar2: SoundMaster controls no longer auto-close after 3 seconds (auto-hide now defaults to off; TalkBack navigation does not reset the upstream touch-only timer).
           files: dist/*

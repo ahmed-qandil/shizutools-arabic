@@ -11,8 +11,8 @@ android {
         applicationId "com.legendsayantan.adbtools"
         minSdk 27
         targetSdk 34
-        versionCode 2
-        versionName "1.4.6-ar1"
+        versionCode 3
+        versionName "1.4.6-ar2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

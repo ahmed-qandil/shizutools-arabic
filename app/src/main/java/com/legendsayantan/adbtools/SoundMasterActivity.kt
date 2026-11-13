@@ -213,7 +213,7 @@ class SoundMasterActivity : AppCompatActivity() {
         }
 
         val prefs = getSharedPreferences("soundmaster", Context.MODE_PRIVATE)
-        if(prefs.getBoolean("auto_hide", true)){
+        if(prefs.getBoolean("auto_hide", false)){
             setupAutoHide()
         }
     }
