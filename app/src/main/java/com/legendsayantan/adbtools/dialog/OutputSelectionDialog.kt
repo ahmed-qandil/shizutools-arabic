@@ -26,7 +26,7 @@ class OutputSelectionDialog(
     override fun show() {
         super.show()
         val list = findViewById<RecyclerView>(R.id.outputs)
-        val data = devices.map { VolumeBarAdapter.formatDevice(it) }
+        val data = devices.map { VolumeBarAdapter.formatDevice(context, it) }
         val adapter = SimpleAdapter(data) {
             dismiss()
             onDeviceSelected(devices[it])
